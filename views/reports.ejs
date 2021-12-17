@@ -1,0 +1,69 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Product Management</h1>
+  <br>
+  <a class="btn btn-light btn-lg" href="/basic" role="button">Home</a>
+  <a class="btn btn-light btn-lg" href="/about" role="button">About Us</a>
+  <a class="btn btn-light btn-lg" href="/reports" role="button">Add Product Details</a>
+  <a class="btn btn-light btn-lg" href="/details" role="button">Show Reports</a>
+  <a class="btn btn-light btn-lg" href="/logout" role="button">Logout</a>
+  <br>
+<form action="/details" method="POST">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <form action="/submit" method="POST">
+          <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" placeholder="Full Name" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+<label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" placeholder="Price" id="inputEmail3">
+</div>
+</div>
+<div class="row mb-3">
+<label for="inputEmail3" class="col-sm-2 col-form-label">Quantity in Stock</label>
+<div class="col-sm-10">
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Select Price</option>
+  <option value="1">less than 100</option>
+  <option value="1">100</option>
+  <option value="2">200</option>
+  <option value="3">300</option>
+  <option value="1">400</option>
+  <option value="2">500</option>
+  <option value="3">more than 500</option>
+</select>
+</div>
+</div>
+<div class="row mb-3">
+<label for="inputEmail3" class="col-sm-2 col-form-label">Vendor</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" placeholder="Vendor Name" id="inputEmail3">
+</div>
+</div>
+<div class="row mb-3">
+<label for="inputEmail3" class="col-sm-2 col-form-label">Warranty</label>
+<div class="col-sm-10">
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Select Warranty</option>
+  <option value="1">Available</option>
+  <option value="2">Un-Available</option>
+</select>
+</div>
+</div>
+<a class="btn btn-dark btn-lg" href="/details" role="button">Save</a>
+</form>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <%- include('partials/footer') %>

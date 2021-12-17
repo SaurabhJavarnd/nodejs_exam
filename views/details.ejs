@@ -1,0 +1,64 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Product Management</h1>
+  <br>
+  <a class="btn btn-light btn-lg" href="/basic" role="button">Home</a>
+  <a class="btn btn-light btn-lg" href="/about" role="button">About Us</a>
+  <a class="btn btn-light btn-lg" href="/reports" role="button">Add Product Details</a>
+  <a class="btn btn-light btn-lg" href="/details" role="button">Show Reports</a>
+  <a class="btn btn-light btn-lg" href="/logout" role="button">Logout</a>
+  <br>
+<form action="/details" method="POST">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Productid</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Vendor</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Warranty</th>
+      <th scope="col">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Computer</td>
+      <td>50,000</td>
+      <td>Zen</td>
+      <td>50</td>
+      <td>Available</td>
+      <td><button type="submit" class="btn">Edit</button><button type="submit" class="btn btn-dark">Delete</button></td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Pen</td>
+      <td>10</td>
+      <td>Cello</td>
+      <td>100</td>
+      <td>Un-Available</td>
+      <td><button type="submit" class="btn">Edit</button><button type="submit" class="btn btn-dark">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Printer</td>
+      <td>15,000</td>
+      <td>Hp</td>
+      <td>50</td>
+      <td>Available</td>
+      <td><button type="submit" class="btn">Edit</button><button type="submit" class="btn btn-dark">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+<button type="submit" class="btn btn-dark">Save</button>
+</form>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <%- include('partials/footer') %>
